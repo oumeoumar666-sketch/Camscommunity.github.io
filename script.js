@@ -1,7 +1,7 @@
 const menuButton=document.getElementById("menuButton");const navLinks=document.getElementById("navLinks");menuButton.addEventListener("click",()=>navLinks.classList.toggle("open"));document.querySelectorAll(".nav-links a").forEach(link=>link.addEventListener("click",()=>navLinks.classList.remove("open")));
 
 // Remplace cette valeur par le lien public de ton APK.
-const APK_URL = "https://drive.google.com/file/d/1NqYKjK5Iv7dsZM_HiHfecJwRNElsgd-j/view?usp=drive_link";
+const APK_URL = "https://drive.google.com/file/d/1UVN4cyfc6UwH9wyUI7TE90Wr8-LMvHkV/view?usp=drive_link";
 
 // Remplace par ton numéro WhatsApp international sans + ni espaces.
 const WHATSAPP_NUMBER="224610828649";
