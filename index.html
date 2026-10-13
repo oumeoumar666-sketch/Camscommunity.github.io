@@ -1,50 +1,186 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cams Community | Développement d'applications</title>
-<meta name="description" content="Cams Community - développement d'applications et solutions numériques.">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header>
-<nav class="navbar">
-<a class="logo" href="#accueil">Cams <span>Community</span></a>
-<button class="menu-button" id="menuButton">☰</button>
-<div class="nav-links" id="navLinks">
-<a href="#accueil">Accueil</a><a href="#applications">Applications</a><a href="#apropos">À propos</a><a href="#contact">Contact</a>
-</div>
-</nav>
-</header>
-<main>
-<section id="accueil" class="hero">
-<div class="hero-content">
-<p class="badge">Cams Community</p>
-<h1>Créons des applications <span>utiles et modernes.</span></h1>
-<p class="description">Cams Community développe des solutions numériques pensées pour faciliter le quotidien des utilisateurs et des entreprises.</p>
-<div class="buttons"><a href="#applications" class="btn primary">Découvrir nos applications</a><a href="#contact" class="btn secondary">Nous contacter</a></div>
-</div>
-<div class="hero-card"><div class="hero-icon">CC</div><p>Solutions numériques</p><strong>Innovation • Simplicité • Utilité</strong></div>
-</section>
-<section id="applications" class="section">
-<div class="section-title"><p class="small-title">NOS APPLICATIONS</p><h2>Découvrez nos projets</h2><p>Des applications conçues pour répondre à des besoins réels.</p></div>
-<div class="app-card">
-<div class="app-icon">MB</div>
-<div class="app-info"><span class="status">Disponible</span><h3>Ma Boutique</h3><p>Une application de gestion de boutique permettant de gérer les produits, les clients, les ventes, le stock et bien plus encore.</p><div class="version">Version actuelle : <strong>1.0.7</strong></div><a href="#" class="btn primary" id="downloadButton">Télécharger Ma Boutique</a></div>
-</div>
-</section>
-<section id="apropos" class="section">
-<div class="section-title"><p class="small-title">À PROPOS</p><h2>Cams Community</h2><p>Nous créons des solutions numériques modernes, simples à utiliser et adaptées aux besoins de nos utilisateurs.</p></div>
-<div class="features">
-<article class="feature"><div class="feature-icon">🚀</div><h3>Innovation</h3><p>Des idées transformées en produits numériques.</p></article>
-<article class="feature"><div class="feature-icon">📱</div><h3>Applications</h3><p>Des applications pensées pour le mobile.</p></article>
-<article class="feature"><div class="feature-icon">⚡</div><h3>Simplicité</h3><p>Une expérience claire et facile à utiliser.</p></article>
-</div>
-</section>
-<section id="contact" class="section contact"><div class="section-title"><p class="small-title">CONTACT</p><h2>Une question ?</h2><p>Contactez Cams Community pour découvrir nos projets.</p><a href="#" class="btn primary" id="whatsappButton">Contacter sur WhatsApp</a></div></section>
-</main>
-<footer><div class="footer-logo">Cams Community</div><p>© 2026 Cams Community. Tous droits réservés.</p></footer>
-<script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#08121f" />
+    <meta
+      name="description"
+      content="Télécharge Ma Boutique, l’application de gestion pensée pour les commerçants. Produits, ventes, stock et clients réunis au même endroit."
+    />
+    <meta property="og:title" content="Cams Community — Des outils qui font avancer" />
+    <meta
+      property="og:description"
+      content="Découvre et télécharge les applications Cams Community."
+    />
+    <title>Cams Community — Des outils qui font avancer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Navigation principale">
+        <a class="brand" href="#accueil" aria-label="Cams Community, accueil">
+          <span class="brand-mark" aria-hidden="true">CC</span>
+          <span class="brand-name">Cams<span>Community</span></span>
+        </a>
+
+        <button
+          class="menu-button"
+          id="menuButton"
+          type="button"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <span></span><span></span>
+        </button>
+
+        <div class="nav-links" id="navLinks">
+          <a href="#accueil">Accueil</a>
+          <a href="#applications">Applications</a>
+          <a href="#apropos">À propos</a>
+          <a class="nav-contact" href="#contact">Nous contacter</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container" id="accueil">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> Le numérique, simplement</div>
+          <h1>Des outils qui font <span>avancer vos idées.</span></h1>
+          <p class="hero-description">
+            Cams Community crée des applications utiles, faciles à prendre en main
+            et pensées pour les besoins du quotidien.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#applications">
+              Découvrir l’application
+              <span aria-hidden="true">↘</span>
+            </a>
+            <a class="button button-quiet" href="#apropos">Qui sommes-nous&nbsp;?</a>
+          </div>
+          <div class="hero-proof">
+            <span class="proof-icon" aria-hidden="true">✦</span>
+            <span>Des solutions pensées pour les réalités locales</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Présentation de l’application Ma Boutique">
+          <div class="visual-orbit orbit-one"></div>
+          <div class="visual-orbit orbit-two"></div>
+          <div class="phone-card">
+            <div class="phone-top"><span>Ma Boutique</span><span class="phone-menu">•••</span></div>
+            <div class="phone-greeting">Bonjour 👋<strong>Prêt à gérer votre boutique&nbsp;?</strong></div>
+            <div class="phone-stat">
+              <span class="stat-symbol">▦</span>
+              <span><small>Produits en stock</small><strong>Tout au même endroit</strong></span>
+              <span class="stat-arrow">↗</span>
+            </div>
+            <div class="phone-stat">
+              <span class="stat-symbol stat-symbol-green">↗</span>
+              <span><small>Suivi des ventes</small><strong>Gardez le cap</strong></span>
+              <span class="stat-arrow">↗</span>
+            </div>
+            <div class="phone-nav"><i></i><i></i><i></i><i></i></div>
+          </div>
+          <div class="float-label"><span>✦</span> Simple au quotidien</div>
+          <div class="visual-glow"></div>
+        </div>
+      </section>
+
+      <section class="app-section section-wrap" id="applications">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-kicker">Nos applications</p>
+            <h2>Un bon outil change la façon de travailler.</h2>
+            <p>Commencez avec Ma Boutique, notre application dédiée aux commerçants.</p>
+          </div>
+
+          <article class="app-card">
+            <div class="app-icon-wrap"><div class="app-icon" aria-hidden="true">MB</div></div>
+            <div class="app-content">
+              <div class="app-meta">
+                <span class="status"><span></span> Disponible sur Android</span>
+                <span class="version">Version <strong>1.0.2</strong></span>
+              </div>
+              <h3>Ma Boutique</h3>
+              <p>
+                Gérez vos produits, vos ventes, votre stock et vos clients depuis
+                une seule application. Retrouvez aussi votre espace de vente en ligne.
+              </p>
+              <div class="app-tags">
+                <span>Gestion de stock</span><span>Suivi des ventes</span><span>Vente en ligne</span>
+              </div>
+              <a class="button button-primary download-button" id="downloadButton" href="#">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 17v3h14v-3" /></svg>
+                Télécharger Ma Boutique
+              </a>
+              <p class="download-note">Fichier APK pour Android · Téléchargement sécurisé via Google Drive</p>
+            </div>
+            <div class="app-card-decoration" aria-hidden="true">MB</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="benefits-section section-wrap" id="apropos">
+        <div class="container">
+          <div class="section-heading centered">
+            <p class="section-kicker">Notre approche</p>
+            <h2>La technologie doit vous simplifier la vie.</h2>
+            <p>Nous partons des besoins concrets pour concevoir des outils accessibles et pratiques.</p>
+          </div>
+          <div class="benefits-grid">
+            <article class="benefit-card">
+              <div class="benefit-icon icon-blue" aria-hidden="true">✳</div>
+              <h3>Utile avant tout</h3>
+              <p>Chaque fonctionnalité répond à une tâche réelle du quotidien.</p>
+            </article>
+            <article class="benefit-card">
+              <div class="benefit-icon icon-violet" aria-hidden="true">▱</div>
+              <h3>Facile à utiliser</h3>
+              <p>Une expérience claire, même si vous débutez avec les outils numériques.</p>
+            </article>
+            <article class="benefit-card">
+              <div class="benefit-icon icon-green" aria-hidden="true">↗</div>
+              <h3>Conçue pour évoluer</h3>
+              <p>Des solutions qui grandissent avec les projets et leurs utilisateurs.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section section-wrap" id="contact">
+        <div class="container contact-card">
+          <div>
+            <p class="section-kicker">Parlons de votre projet</p>
+            <h2>Une question sur Ma Boutique&nbsp;?</h2>
+            <p>Écrivez-nous sur WhatsApp. Nous vous répondrons avec plaisir.</p>
+          </div>
+          <a class="button button-light" id="whatsappButton" href="#">
+            Contacter sur WhatsApp <span aria-hidden="true">↗</span>
+          </a>
+          <div class="contact-decoration" aria-hidden="true">✦</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand footer-brand" href="#accueil">
+          <span class="brand-mark" aria-hidden="true">CC</span>
+          <span class="brand-name">Cams<span>Community</span></span>
+        </a>
+        <p>Des solutions numériques pensées pour vous.</p>
+        <span class="copyright">© 2026 Cams Community</span>
+      </div>
+    </footer>
+  </body>
 </html>
