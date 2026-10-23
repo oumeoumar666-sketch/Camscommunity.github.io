@@ -1,7 +1,7 @@
 const menuButton=document.getElementById("menuButton");const navLinks=document.getElementById("navLinks");menuButton.addEventListener("click",()=>navLinks.classList.toggle("open"));document.querySelectorAll(".nav-links a").forEach(link=>link.addEventListener("click",()=>navLinks.classList.remove("open")));
 
 // Remplace cette valeur par le lien public de ton APK.
-const APK_URL = "https://drive.google.com/file/d/1qvgXmd6ShyuNdfeuyL5yGr2jZ7FXZuFk/view?usp=sharing";
+const APK_URL = "https://drive.google.com/file/d/1bYz7iZ4T9OMJD_in5g3cvxLCpmEKF4_f/view?usp=sharing";
 
 
 
